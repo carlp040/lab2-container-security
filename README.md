@@ -55,6 +55,7 @@ lab2-container-security/
 └── screenshots/
     ├── trivy-before.png
     ├── trivy-after.png
+    ├── cosign.png
     ├── gatekeeper-deny.png
     └── gatekeeper-pass.png
 ```
@@ -72,6 +73,8 @@ Screenshot gatekeeper-deny
 ![gatekeeper-deny](screenshots/gatekeeper-deny.png)
 Screenshot gatekeeper-pass
 ![gatekeeper-pass](screenshots/gatekeeper-pass.png)
+Screenshot Cosign
+![cosign](screenshots/cosign.png)
 
 ---
 
