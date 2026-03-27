@@ -11,6 +11,8 @@ Genererade en Software Bill of Materials (SBOM) med Trivy för att dokumentera a
 
 Testade policy-enforcement med OPA Gatekeeper i Kubernetes för att säkerställa att pods följer krav på labels.
 
+Signering med Cosign - Säkerställer att endast signerade images används i produktionsmiljö och gör det möjligt att verifiera integritet och äkthet av images.
+
 Reflekterade över container-säkerhet, vikten av SBOM och hur Gatekeeper påverkar arbetsflöden i Kubernetes.
 
 ---
@@ -28,6 +30,8 @@ OPA Gatekeeper – för policy-enforcement i Kubernetes.
 
 kubectl – för att interagera med klustret.
 
+cosign - Image-signatur, verifiering, integritet.
+
 # Lab 2: Container Security
 
 ## Filstruktur
@@ -41,6 +45,10 @@ lab2-container-security/
 ├── scan-before.txt
 ├── scan-after.txt
 ├── policies/
+│   ├── require-imagepullpolicy-template.yaml 
+│   ├── require-imagepullpolicy.yaml   
+│   ├── require-resource-limits-template.yaml
+│   ├── require-resource-limits.yaml
 │   ├── require-labels-template.yaml
 │   └── require-team-label.yaml
 ├── README.md
